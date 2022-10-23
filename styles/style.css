@@ -1,0 +1,33 @@
+html{
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+}
+
+img {
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.text-logo {
+  padding: 10px 0px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.603);
+}
