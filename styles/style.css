@@ -2,9 +2,12 @@
   font-family: Norse;
   src: url("/Norse-Bold.otf") format("opentype");
 }
-*{
-margin: 0;
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
 html, body {
    height: 100%; margin: 0;
    font-family: Arial, Helvetica, sans-serif;
@@ -23,8 +26,8 @@ html, body {
   color: white;
 }
 
-.welcome-text,
-.form-container{
+.welcome-text{
+/* .form-container{ */
   padding-left: 3rem;
 }
 
@@ -58,11 +61,12 @@ img{
 }
 
 .container-text{
+  padding-top: 3rem;
   flex-grow: 1;
 }
 
 h1 {
-  margin: 5px;
+  margin: 0px;
   font-size: 1.3rem;
 }
 
@@ -71,11 +75,15 @@ h1 {
 }
 
 .form-container {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 3rem;
   color: rgb(34, 34, 34);
-  width: 100%;
+  width: calc(100%-3rem);
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px -1px 4px rgba(0, 0, 0, 0.5);
 }
+
 form{
   display: flex;
   flex-direction: row;
@@ -109,7 +117,7 @@ button {
   margin:2rem 0rem 0rem 3rem;
   padding: 1rem 2rem;
   background-color: #596D48;
-  border: none; border-radius: 1px;
+  border: none; border-radius: 10px;
   font-size: 1rem; font-weight: bold;
   color:white;
 }
