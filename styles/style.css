@@ -1,14 +1,21 @@
-html, body {
-  height: 100%;
-  margin: 0;
+@font-face {
+  font-family: Norse;
+  src: url("/Norse-Bold.otf") format("opentype");
 }
-
+*{
+margin: 0;
+}
+html, body {
+   height: 100%; margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
 .page-container {
-  min-height: 100%;
+  background-color: rgb(249, 250, 251);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: auto;
+  margin: auto;
+  min-height: 100%;
 }
 
 .container {
@@ -16,7 +23,18 @@ html, body {
   color: white;
 }
 
+.welcome-text,
+.form-container{
+  padding-left: 3rem;
+}
+
 .text-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Norse;
+  font-size: 60px;
   padding: 10px 0px;
   width: 100%;
   position: absolute;
@@ -27,8 +45,75 @@ html, body {
 
 img{
   height: 100vh;
+  margin: 0;
+  display: block;
+}
+
+.odin {
+  height: 1.5em;
+}
+
+.welcome-text {
+  font-weight: bold;
 }
 
 .container-text{
-  height: 100%;
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+.form-container p {
+  margin: .8rem 0rem;
+}
+
+.form-container {
+  color: rgb(34, 34, 34);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px -1px 4px rgba(0, 0, 0, 0.5);
+}
+form{
+  display: flex;
+  flex-direction: row;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label,input{
+  display:flex;
+  flex-direction:column;
+}
+
+label {
+  font-size: .6rem;
+}
+
+.form-row input {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 3px;
+}
+.form-row input:focus{
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 1px 1px 3px blue;
+}
+
+button {
+  margin:2rem 0rem 0rem 3rem;
+  padding: 1rem 2rem;
+  background-color: #596D48;
+  border: none; border-radius: 1px;
+  font-size: 1rem; font-weight: bold;
+  color:white;
+}
+
+a {
+  text-decoration: none;
 }
